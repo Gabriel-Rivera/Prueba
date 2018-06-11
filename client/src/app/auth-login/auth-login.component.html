@@ -1,0 +1,15 @@
+<div class="DivLogin">
+<form class="formLogin" #loginForm="ngForm" (ngSubmit)="sendForm(loginForm)">
+  <h2> Login </h2>
+  <label> Username </label>
+  <input type="text" [(ngModel)]="formInfo.username" name="username" id="username" ngModel/>
+  <br><br>
+  <label> Password </label>
+  <input type="password" [(ngModel)]="formInfo.password" name="password" id="password" ngModel/>
+  <br><br><br>
+  <div class="btn">
+  <button type="submit">Login </button>
+</div>
+</form>
+<p class="error"> {{ error }} </p>
+</div>

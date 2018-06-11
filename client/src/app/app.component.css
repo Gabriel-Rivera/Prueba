@@ -1,0 +1,11 @@
+.seleccion{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 70px;
+    height: 30px;
+}
+body{
+    background-color: aquamarine;
+}

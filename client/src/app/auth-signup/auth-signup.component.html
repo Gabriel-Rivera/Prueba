@@ -1,0 +1,15 @@
+<div class="DivSignup">
+<form class="formSignup" (ngSubmit)="sendSignupForm(myForm)" #myForm="ngForm">
+  <h2> Signup </h2>
+  <label> Username </label>
+  <input type="text" [(ngModel)]="username" name="username"/>
+  <br><br>
+  <label> Password </label>
+  <input type="password" [(ngModel)]="password" name="password"/>
+  <br><br><br>
+  <div class="btn">
+    <button type="submit"> login </button>
+  </div>
+</form>
+<p class="error"> {{ error }} </p>
+</div>
